@@ -49,7 +49,7 @@ step (number) : The current step index
 
 (string) : A color on HEX format
 
-**Exemple**
+**Example**
 
 ```javascript
 rainbow(3, 2); // return #0000ff
