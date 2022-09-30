@@ -1,31 +1,44 @@
 import 'mocha';
 import { assert } from 'chai';
 
-import { rainbow } from '../src/index';
 import npmPackage from '../src/index';
-
-import SCENARIOS from './index.scenarios'
 
 describe('Colorer', () => {
   it('should be an object', () => {
     assert.isObject(npmPackage);
   });
 
+  it('should have a fromHex property', () => {
+    assert.property(npmPackage, 'fromHex');
+  });
+  it('should have a fromRgb property', () => {
+    assert.property(npmPackage, 'fromRgb');
+  });
+  it('should have a hexToRgb property', () => {
+    assert.property(npmPackage, 'hexToRgb');
+  });
+  it('should have a interpolate property', () => {
+    assert.property(npmPackage, 'interpolate');
+  });
+  it('should have a interpolation property', () => {
+    assert.property(npmPackage, 'interpolation');
+  });
   it('should have a rainbow property', () => {
     assert.property(npmPackage, 'rainbow');
   });
-});
-
-describe('rainbow Function', () => {
-  it('should be a function', () => {
-    assert.isFunction(rainbow);
+  it('should have a rainbowColor property', () => {
+    assert.property(npmPackage, 'rainbowColor');
   });
-  for (let index = 0; index < SCENARIOS.length; index++) {
-    const scenario = SCENARIOS[index];
-    it(`should return "${scenario.output}" with "${scenario.input.numOfSteps}" numOfSteps and "${scenario.input.step}" step`, () => {
-      const expected = scenario.output;
-      const actual = rainbow(scenario.input.numOfSteps, scenario.input.step);
-      assert.equal(actual, expected);
-    });
-  }
+  it('should have a random property', () => {
+    assert.property(npmPackage, 'random');
+  });
+  it('should have a rgbToHex property', () => {
+    assert.property(npmPackage, 'rgbToHex');
+  });
+  it('should have a toHex property', () => {
+    assert.property(npmPackage, 'toHex');
+  });
+  it('should have a toRgb property', () => {
+    assert.property(npmPackage, 'toRgb');
+  });
 });
