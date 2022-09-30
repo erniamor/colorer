@@ -23,6 +23,8 @@ npm install @erniamor/colorer
 
 ```javascript
 import { fromHex } from '@erniamor/colorer';
+// or
+const { fromHex } = require('@erniamor/fromHex').default;
 ```
 
 2. Call function with expected arguments
