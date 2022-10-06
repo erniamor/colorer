@@ -4,7 +4,7 @@ interface Scenario {
   input: {
     start: Color,
     end: Color,
-    factor: number,
+    factor?: number,
   },
   output: Color
 }
@@ -63,6 +63,13 @@ const scenarios: Scenario[] = [
       start: [0, 100, 200],
       end: [100, 200, 300],
       factor: 0.5
+    },
+    output: [50, 150, 250]
+  },
+  {
+    input: {
+      start: [0, 100, 200],
+      end: [100, 200, 300],
     },
     output: [50, 150, 250]
   },

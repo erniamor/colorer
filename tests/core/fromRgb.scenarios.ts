@@ -2,7 +2,7 @@ import { Color, Rgb } from "../../src/types";
 
 interface Scenario {
   input: Rgb,
-  output: Color
+  output: Color | null
 }
 
 const scenarios: Scenario[] = [
@@ -25,6 +25,10 @@ const scenarios: Scenario[] = [
   {
     input: 'rgb(0, 0, 255)',
     output: [0, 0, 255]
+  },
+  {
+    input: 'abc',
+    output: null
   },
 ];
 

@@ -1,6 +1,6 @@
 {
   "name": "@erniamor/colorer",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "JavaScript library that provide color helpers.",
   "exports": {
     ".": {
@@ -25,6 +25,7 @@
     "build:esm": "tsc -p ./configs/tsconfig.esm.json && mv lib/esm/index.js lib/esm/index.mjs",
     "build:cjs": "tsc -p ./configs/tsconfig.cjs.json",
     "test": "mocha",
+    "test-coverage": "nyc --reporter=html mocha",
     "semantic-release": "semantic-release",
     "prepack": "npm run build"
   },
@@ -58,12 +59,13 @@
   },
   "homepage": "https://github.com/erniamor/colorer#readme",
   "devDependencies": {
-    "@types/mocha": "^9.1.1",
-    "mocha": "^10.0.0",
-    "ts-node": "^10.9.1",
-    "typescript": "^4.7.4",
-    "semantic-release": "^19.0.3",
     "@types/chai": "^4.3.3",
-    "chai": "^4.3.6"
+    "@types/mocha": "^9.1.1",
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "nyc": "^15.1.0",
+    "semantic-release": "^19.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
   }
 }

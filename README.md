@@ -6,6 +6,7 @@
 * 📦 No dependancies
 * 👫 All browsers supported
 * ✅ Fully tested
+* 😎 100% covered
 
 ---
 
@@ -249,11 +250,25 @@ interpolation([0, 100, 200], [100, 200, 300], 6); // return [[0, 100, 200], [20,
 
 ## Tests
 
-Run tests with npm test command
+- Run tests with npm test command
 
 ```console
 npm run test
 ```
+
+- Run covered tests with npm test-coverage command
+
+```console
+npm run test-coverage
+```
+
+- Open coverage HTML report
+
+```console
+npx http-server ./coverage
+```
+
+And open your browser at http://127.0.0.1:8080
 
 ---
 

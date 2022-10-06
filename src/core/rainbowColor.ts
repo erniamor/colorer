@@ -21,7 +21,6 @@ export function rainbowColor(numOfSteps: number, step: number): Color {
     case 3: r = 0; g = q; b = 1; break;
     case 4: r = f; g = 0; b = 1; break;
     case 5: r = 1; g = 0; b = q; break;
-    default: break;
   }
   return [
     Math.round(r * 255),

@@ -37,6 +37,16 @@ const scenarios: Scenario[] = [
       [100, 200, 300],
     ]
   },
+  {
+    input: {
+      start: [0, 0, 0],
+      end: [255, 255, 255],
+      steps: 1
+    },
+    output: [
+      [0, 0, 0]
+    ]
+  },
 ];
 
 export default scenarios;
