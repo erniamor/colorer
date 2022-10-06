@@ -1,6 +1,6 @@
 {
   "name": "@erniamor/colorer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "JavaScript library that provide color helpers.",
   "exports": {
     ".": {
