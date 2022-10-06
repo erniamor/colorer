@@ -7,6 +7,6 @@ import { Color, Rgb } from "../types";
  * @param {Color} rgb RGB color array
  * @returns {Rgb} RGB color string
  */
-export default function toRgb(rgb: Color): Rgb {
+export function toRgb(rgb: Color): Rgb {
   return `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`;
 }

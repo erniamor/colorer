@@ -8,7 +8,7 @@ import { Color } from "../types";
  * @param {number} step
  * @returns {Color} color
  */
-export default function rainbowColor(numOfSteps: number, step: number): Color {
+export function rainbowColor(numOfSteps: number, step: number): Color {
   let r = 0, g = 0, b = 0;
   const h = step / numOfSteps;
   const i = ~~(h * 6);

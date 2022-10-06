@@ -1,7 +1,7 @@
 import 'mocha';
 import { assert } from 'chai';
 
-import fromHex from '../../src/core/fromHex';
+import { fromHex } from '../../src/core/fromHex';
 import SCENARIOS from './fromHex.scenarios';
 
 describe('fromHex Function', () => {

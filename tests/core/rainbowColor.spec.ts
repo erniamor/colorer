@@ -1,7 +1,7 @@
 import 'mocha';
 import { assert } from 'chai';
 
-import rainbowColor from '../../src/core/rainbowColor';
+import { rainbowColor } from '../../src/core/rainbowColor';
 import SCENARIOS from './rainbowColor.scenarios';
 
 describe('rainbowColor Function', () => {

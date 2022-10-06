@@ -1,7 +1,7 @@
 import 'mocha';
 import { assert } from 'chai';
 
-import interpolate from '../../src/core/interpolate';
+import { interpolate } from '../../src/core/interpolate';
 import SCENARIOS from './interpolate.scenarios';
 
 describe('interpolate Function', () => {

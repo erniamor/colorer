@@ -1,7 +1,7 @@
 import 'mocha';
 import { assert } from 'chai';
 
-import toRgb from '../../src/core/toRgb';
+import { toRgb } from '../../src/core/toRgb';
 import SCENARIOS from './toRgb.scenarios';
 
 describe('toRgb Function', () => {

@@ -1,7 +1,7 @@
 import 'mocha';
 import { assert } from 'chai';
 
-import random from '../../src/core/random';
+import { random } from '../../src/core/random';
 
 describe('random Function', () => {
   it('should be a function', () => {

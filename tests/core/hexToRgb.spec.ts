@@ -1,7 +1,7 @@
 import 'mocha';
 import { assert } from 'chai';
 
-import hexToRgb from '../../src/core/hexToRgb';
+import { hexToRgb } from '../../src/core/hexToRgb';
 import SCENARIOS from './hexToRgb.scenarios';
 
 describe('hexToRgb Function', () => {

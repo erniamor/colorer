@@ -1,5 +1,5 @@
 import { Color } from "../types";
-import rainbowColor from "./rainbowColor";
+import { rainbowColor } from "./rainbowColor";
 
 /**
  * rainbow
@@ -9,6 +9,6 @@ import rainbowColor from "./rainbowColor";
  * @param {number} numOfSteps number of rainbow steps
  * @returns {Color[]} colors
  */
-export default function rainbow(numOfSteps: number): Color[] {
+export function rainbow(numOfSteps: number): Color[] {
   return Array(numOfSteps).fill(0).map((value, stepIndex) => rainbowColor(numOfSteps, stepIndex));
 }
